@@ -10,7 +10,7 @@ project 1 - A Random Quote Generator
 /*** 
  * `quotes` array 
 ***/
-
+//array with a list of ten random quotes
 const quotes = [
 {
   quote:'Talk is cheap. Show me the code.', 
@@ -73,7 +73,7 @@ const quotes = [
   source: 'Chris Pine', 
   cite: 'Learn to Program.', 
   year: '2006', 
-  tag: '.'
+  tag: 'programming.'
 },
 {
   quote:'My mission in life is not merely to survive, but to thrive; and to do so with some passion, some compassion, some humor, and some style.', 
@@ -92,7 +92,7 @@ function getRandomQuote () {
   let getRandomQuote = Math.floor(Math.random() * quotes.length);
   return quotes[getRandomQuote];
 }
-console.log(quotes[8]);
+console.log(quotes);
 
 /***
  * `printQuote` function

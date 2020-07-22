@@ -87,11 +87,12 @@ const quotes = [
 /***
  * `getRandomQuote` function
 ***/
-
+//function that prints quotes randomly from the array 'quotes'
 function getRandomQuote () {
-  const getRandomQuote = Math.floor(Math.random() quotes.length);
-  return quotes[random];
+  let getRandomQuote = Math.floor(Math.random() * quotes.length);
+  return quotes[getRandomQuote];
 }
+console.log(quotes[8]);
 
 /***
  * `printQuote` function

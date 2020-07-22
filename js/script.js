@@ -92,14 +92,14 @@ function getRandomQuote () {
   let getRandomQuote = Math.floor(Math.random() * quotes.length);
   return quotes[getRandomQuote];
 }
-console.log(quotes);
+console.log(getRandomQuote());
 
 /***
  * `printQuote` function
 ***/
 function printQuote () {
-  const quote = getRandomQuote()
-
+  let message = "";
+  let showQuote = getRandomQuote(quotes);
 }
 
 /***

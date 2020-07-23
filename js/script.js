@@ -93,13 +93,13 @@ function getRandomQuote () {
   return quotes[getRandomQuote];
 }
 console.log(getRandomQuote());
-
 /***
  * `printQuote` function
 ***/
 function printQuote () {
   let message = "";
   let showQuote = getRandomQuote(quotes);
+  //HI KEVIN, THIS IS WHERE I AM STUCK, SHOULD I DO A ELSE IF CLAUSE?
 }
 
 /***

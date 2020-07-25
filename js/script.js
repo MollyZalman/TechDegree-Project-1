@@ -96,37 +96,15 @@ function getRandomQuote (display) {
 /***
  * `printQuote` function
 ***/
-//Inspired bu MDN's HTML Element.innertext resource: https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText
-function printQuote () {
-  const display = getRandomQuote(quotes);
-  let message = `
-    <p class = "quote"> ${display.quote}</p>
-    <p class = "source"> ${display.source}</p>
-    <p class = "citation"> ${display.citation}</p>
-    <p class = "year"> ${display.year}</p>
-    <p class = "tag"> ${display.tag}</p> `
-  
-  if (display.quote) {
-    message += `<span class = "quote"> ${display.quote}</span>`
-  }    
-  if (display.source) {
-    message += `<span class = "source"> ${display.source}</span>`
-  }    
-  if (display.citation) {
-    message += `<span class = "citation"> ${display.citation}</span>`
-  }  
-  if (display.year) {
-    message += `<span class = "year">${display.year}</span>`
-  }
-  if (display.tag) {
-    message += `<span class = "tag">${display.tag}</span>`
-  }
-  message += `</p>`
-  document.getElementById("quote-box").innerHTML = message
-}
+//!! converts to true or false
+function printQuote () { 
+const { quote, source, cite, year} = getRandomQuote(quotes);  
 
-
-  
+document.querySelector(".quote").innerText = quote;
+document.querySelector(".source").innerText = source;
+document.querySelector(".cite").innerText = cite;
+document.querySelector(".year").innerText = year;
+} 
 /***
  * DO NOT CHANGE THE CODE BELOW!!
 ***/

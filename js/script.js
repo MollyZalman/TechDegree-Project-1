@@ -41,7 +41,7 @@ const quotes = [
   tag: 'inspiration '
 },
 {
-  quote:'What kind of programmer is so divorced from reality that she thinks she will get complex software right the first time?.', 
+  quote:'What kind of programmer is so divorced from reality that she thinks she will get complex software right the first time?', 
   source: 'James Alan Gardner ', 
   cite: 'Acending ', 
   year: '2001 ', 
@@ -96,17 +96,34 @@ function getRandomQuote (display) {
 /***
  * `printQuote` function
 ***/
-//!! converts to true or false
+//printQuote function using intertext and querySelector
 function printQuote () { 
-const { quote, source, cite, year} = getRandomQuote(quotes);  
+const { quote, source, cite, year, tag} = getRandomQuote(quotes);  
+let htmlString = '';
 
 document.querySelector(".quote").innerText = quote;
 document.querySelector(".source").innerText = source;
 document.querySelector(".cite").innerText = cite;
 document.querySelector(".year").innerText = year;
-} 
+document.querySelector(".tag").innerText = tag;
+
+//Filling in cite, year, tag
+htmlString += '<p class="quote">' + printQuote.quote + '</p>';
+htmlString += '<p class="source">' + printQuote.source;
+
+if (printQuote.cite) {
+ htmlString += '<span class = "cite">' + printQuote.cite + '</span>'
+}
+if (printQuote.year) {
+  htmlString += '<span class = "year">' + printQuote.year + '</span>'
+ }
+ if (printQuote.tag) {
+  htmlString += '<p><span class = "tag">' + printQuote.tag + '</span></p>'
+ }
+}
 /***
  * DO NOT CHANGE THE CODE BELOW!!
 ***/
 
+//Show another quote
 document.getElementById('load-quote').addEventListener("click", printQuote, false);

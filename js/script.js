@@ -100,19 +100,25 @@ function printQuote () {
   const { quote, source, cite, year, tag} = getRandomQuote(quotes);  
   let htmlString = '';
     
+  document.querySelector(".quote").innerText = quote;
+  document.querySelector(".source").innerText = source;
+  document.querySelector(".cite").innerText = cite;
+  document.querySelector(".year").innerText = year;
+  document.querySelector(".tag").innerText = tag;
+
   //Filling in cite, year, tag
-  htmlString += '<p class="quote">' + printQuote.quote + '</p>';
-  htmlString += '<p class="source">' + printQuote.source;
+  htmlString += '<p class="quote">' + quote + '</p>';
+  htmlString += '<p class="source">' + source;
   
-  if (printQuote.cite) {
-   htmlString += '<span class = "cite">' + getRandomQuote.cite + '</span>'
-  }
-  if (printQuote.year) {
-    htmlString += '<span class = "year">' + getRandomQuote.year + '</span>'
-   }
-   if (printQuote.tag) {
-    htmlString += '<span class = "tag">' + getRandomQuote.tag + '</span>'
-   }
+  // if (printQuote.cite) {
+  //  htmlString += '<span class = "cite">' + getRandomQuote.cite + '</span>'
+  // }
+  // if (printQuote.year) {
+  //   htmlString += '<span class = "year">' + getRandomQuote.year + '</span>'
+  //  }
+  //  if (printQuote.tag) {
+  //   htmlString += '<span class = "tag">' + getRandomQuote.tag + '</span>'
+  //  }
   }
 /***
  * DO NOT CHANGE THE CODE BELOW!!

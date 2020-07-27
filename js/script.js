@@ -99,27 +99,24 @@ function getRandomQuote (display) {
 //printQuote function using intertext and querySelector
 function printQuote () { 
   const { quote, source, cite, year, tag} = getRandomQuote(quotes);  
-  let htmlString = '';
+  // let htmlString = '';
 
-    document.querySelector(".quote").innerHTML = quote;
-    document.querySelector(".source").innerHTML = source;
-    document.querySelector(".cite").innerHTML = cite;
-    document.querySelector(".year").innerHTML = year;
-    document.querySelector(".tag").innerHTML = tag;
+    document.querySelector(".quote").innerText = quote;
+    document.querySelector(".source").innerHTML = `${source}<span class="citation">${cite}</span><span class="year">${year}</span></pclass=><span class="tag">${tag}</span>`;
     
   //Filling in cite, year, tag
-  htmlString += '<p class="quote">' + printQuote.quote + '</p>';
-  htmlString += '<p class="source">' + printQuote.source;
+  // htmlString += '<p class="quote">' + printQuote.quote + '</p>';
+  // htmlString += '<p class="source">' + printQuote.source;
   
-  if (printQuote.cite) {
-   htmlString += '<span class = "cite">' + getRandomQuote.cite + '</span>'
-  }
-  if (printQuote.year) {
-    htmlString += '<span class = "year">' + getRandomQuote.year + '</span>'
-   }
-   if (printQuote.tag) {
-    htmlString += '<span class = "tag">' + getRandomQuote.tag + '</span>'
-   }
+  // if (printQuote.cite) {
+  //  htmlString += '<span class = "cite">' + getRandomQuote.cite + '</span>'
+  // }
+  // if (printQuote.year) {
+  //   htmlString += '<span class = "year">' + getRandomQuote.year + '</span>'
+  //  }
+  //  if (printQuote.tag) {
+  //   htmlString += '<span class = "tag">' + getRandomQuote.tag + '</span>'
+  //  }
   }
 /***
  * DO NOT CHANGE THE CODE BELOW!!

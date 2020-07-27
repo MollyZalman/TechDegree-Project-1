@@ -98,17 +98,17 @@ function getRandomQuote (display) {
 ***/
 function printQuote () { 
   const { quote, source, cite, year, tag} = getRandomQuote(quotes);  
-  let htmlString = '';
+  // let htmlString = '';
     
   document.querySelector(".quote").innerText = quote;
   document.querySelector(".source").innerText = source;
-  document.querySelector(".cite").innerText = cite;
+  document.querySelector(".citation").innerText = cite;
   document.querySelector(".year").innerText = year;
   document.querySelector(".tag").innerText = tag;
 
   //Filling in cite, year, tag
-  htmlString += '<p class="quote">' + quote + '</p>';
-  htmlString += '<p class="source">' + source;
+  // htmlString += '<p class="quote">' + quote + '</p>';
+  // htmlString += '<p class="source">' + source;
   
   // if (printQuote.cite) {
   //  htmlString += '<span class = "cite">' + getRandomQuote.cite + '</span>'

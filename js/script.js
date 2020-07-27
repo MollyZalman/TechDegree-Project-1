@@ -100,6 +100,12 @@ function getRandomQuote (display) {
 function printQuote () { 
   const { quote, source, cite, year, tag} = getRandomQuote(quotes);  
   let htmlString = '';
+
+    document.querySelector(".quote").innerHTML = quote;
+    document.querySelector(".source").innerHTML = source;
+    document.querySelector(".cite").innerHTML = cite;
+    document.querySelector(".year").innerHTML = year;
+    document.querySelector(".tag").innerHTML = tag;
     
   //Filling in cite, year, tag
   htmlString += '<p class="quote">' + printQuote.quote + '</p>';

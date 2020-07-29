@@ -15,62 +15,72 @@ const quotes = [
   {
     quote:'Talk is cheap. Show me the code.', 
     source: 'Linus Torvalds', 
-    cite: 'Quotes.com', 
+    citation: 'Quotes.com', 
     year: 'Year Unknown', 
+    tag: 'Linux'
   },
   {
     quote:'Life can only be understood backwards; but it must be lived forwards.', 
     source: 'Soren Kierkegaard', 
-    cite: 'Quotes.com', 
-    year: 'Year Unknown'
+    citation: 'Quotes.com', 
+    year: 'Year Unknown',
+    tag: 'Life'
   },
   {
     quote:'The most disastrous thing that you can ever learn is your first programming language.', 
     source: 'Alan Kay', 
-    cite: 'Quotes.com', 
-    year: 'Year Unknown' 
+    citation: 'Quotes.com', 
+    year: 'Year Unknown', 
+    tag: 'Programming'
   },
   {
     quote:'I have missed more than 9000 shots in my career. I have lost almost 300 games. 26 times I have been trusted to take the game winning shot and missed. I have failed over and over and over again in my life. And that is why I succeed.', 
     source: 'Michael Jordan', 
-    cite: 'Unknown', 
-    year: 'Quotes.com'
+    citation: 'Unknown', 
+    year: 'Quotes.com',
+    tag: 'Sports'
   },
   {
     quote:'What kind of programmer is so divorced from reality that she thinks she will get complex software right the first time?', 
     source: 'James Alan Gardner', 
-    cite: 'Acending', 
-    year: '2001' 
+    citation: 'Acending', 
+    year: '2001',
+    tag: 'Programming' 
   },
   {
     quote:'There are no mistakes, only opportunities.', 
     source: 'Tina Fey', 
-    cite: 'Quotes.com', 
-    year: 'Year Unknown' 
+    citation: 'Quotes.com', 
+    year: 'Year Unknown',
+    tag: 'Motivation' 
   },
   {
     quote:'Take time to learn the closest thing that we have to a SUPERPOWER - Code.', 
     source: 'Sharen Eddings', 
-    cite: 'Quotes.com', 
-    year: 'Year Unknown' 
+    citation: 'Quotes.com', 
+    year: 'Year Unknown',
+    tag: 'Programming' 
   },
   {
     quote:'The minute that you’re not learning I believe you are dead.', 
     source: 'Jack Nicholson', 
-    cite: 'Quotes.com', 
-    year: 'Year Unknown' 
+    citation: 'Quotes.com', 
+    year: 'Year Unknown',
+    tag: 'Comedy' 
   },
   {
     quote:'Programming is not about what you know; it is about what you can figure out.', 
     source: 'Chris Pine', 
-    cite: 'Learn to Program', 
-    year: '2006'
+    citation: 'Learn to Program', 
+    year: '2006',
+    tag: 'Programming'
   },
   {
     quote:'My mission in life is not merely to survive, but to thrive; and to do so with some passion, some compassion, some humor, and some style.', 
     source: 'Maya Angelou', 
-    cite: 'Quotes.com', 
+    citation: 'Quotes.com', 
     year: 'Year Unknown',
+    tag: 'Life'
   },
   ]
   
@@ -89,9 +99,9 @@ const quotes = [
   ***/
   //printQuote function using interText/HTML to print the quote and change the color
   function printQuote () { 
-    const { quote, source, cite, year} = getRandomQuote(quotes);  
+    const { quote, source, citation, year, tag} = getRandomQuote(quotes);  
       document.querySelector(".quote").innerText = quote;
-      document.querySelector(".source").innerHTML = `${source}<span class="citation">${cite}</span><span class="year">${year}</span></pclass=><span`;
+      document.querySelector(".source").innerHTML = `${source}<span class="citation">${citation}</span><span class="year">${year}</span><span class="tag">${tag}</span></pclass=>`;
       return getRandomColor();
     }
 

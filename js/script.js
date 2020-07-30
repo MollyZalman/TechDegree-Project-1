@@ -74,11 +74,11 @@ const quotes = [
     citation: 'Quotes.com', 
     year: 'Year Unknown',
     tag: 'Life'
-  },
+  }
   ]
   
   //function that prints quotes randomly from the array 'quotes'
-  function getRandomQuote (display) {
+  function getRandomQuote () {
     let getRandomQuote = Math.floor(Math.random() * quotes.length);
     return quotes[getRandomQuote];
   }
@@ -100,7 +100,6 @@ const quotes = [
     let getRandomColor = "rgb(" + x + "," + y + "," + z + ")";
     return document.body.style.background = getRandomColor;
   }  
-  getRandomColor();
   
   /*
   Show another background color every 10 seconds automatically

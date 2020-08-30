@@ -1,4 +1,4 @@
-## Project title
+# Project title
 A random quote generator to showcase my understanding of basic JavaScript.
 
 ## Motivation
@@ -7,10 +7,10 @@ My first project for the Team Treehouse Tech Degree in Full Stack Javascript.
 ## Build status
 Done
 
-# Start Date:
+## Start Date:
 7/23/20
 
-# End Date:
+## End Date:
 7/30/20
 
 ## Code style

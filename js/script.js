@@ -1,7 +1,7 @@
-                                          /*#########################################
-                                                Treehouse FSJS Techdegree:
-                                            project 1 - A Random Quote Generator
-                                          ##########################################*/
+                                                              /*#########################################
+                                                                    Treehouse FSJS Techdegree:
+                                                                Project 1 - A Random Quote Generator
+                                                              ##########################################*/
 
 //array with a list of ten random quotes
 const quotes = [

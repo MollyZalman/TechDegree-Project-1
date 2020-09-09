@@ -1,5 +1,5 @@
 # Project title
-A random quote generator to showcase my understanding of basic JavaScript.
+A Random Quote Generator
 
 ### Motivation
 My first project for the Team Treehouse Tech Degree in Full Stack JavaScript.

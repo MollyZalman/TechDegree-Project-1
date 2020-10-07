@@ -6,11 +6,11 @@
 //array with a list of ten random quotes
 const quotes = [
   {
-    quote:'Talk is cheap. Show me the code.', 
-    source: 'Linus Torvalds', 
-    citation: 'Quotes.com', 
-    year: 'Year Unknown', 
-    tag: 'Linux'
+    quote:'Molly, you are borderline beautiful.',
+    source: 'Adrian Contag', 
+    citation: 'Life', 
+    year: '2018', 
+    tag: 'Beauty'
   },
   {
     quote:'Life can only be understood backwards; but it must be lived forwards.', 
@@ -83,7 +83,6 @@ const quotes = [
     return quotes[getRandomQuote];
   }
   getRandomColor();
-  
   //printQuote function using interText/HTML to print the quote and change the color
   function printQuote () { 
     const { quote, source, citation, year, tag} = getRandomQuote(quotes);  
